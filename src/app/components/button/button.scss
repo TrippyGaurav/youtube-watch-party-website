@@ -1,0 +1,37 @@
+.btn{
+    z-index: 9999;
+    position: relative;
+    display: flex;
+    padding: 1.3rem 2.0rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    color: #FFFFFF;
+    border: none;
+
+    color: #191414;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+
+    border-radius: 4.5rem;
+    background: #EE4545;
+    color: white;
+    transition: .2s all ease;
+    cursor: pointer;
+    border: .3rem solid transparent;
+
+    svg{
+        fill: white;
+    }
+
+    &:hover{
+        // transform: translateX(-10px);
+        opacity: .8;
+        background: transparent;
+        border: .3rem solid white;
+    }
+}

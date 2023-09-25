@@ -1,0 +1,107 @@
+.functionality{
+    position: relative;
+    overflow: hidden;
+
+    .bg{
+        position: absolute;
+        left: -50%;
+        top: -42%;
+    }
+
+    .container{
+        padding: 4rem;
+        padding-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        
+        h2{
+            z-index: 99;
+            color: #FFF;
+            font-size: 4.4rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 111%;
+        }
+        .cards{
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(9.5rem);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 4rem;
+
+            .card{
+                flex: 1;
+                padding: 2rem;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 2rem;
+
+                h3{
+                    color: #FFF;
+                    font-size: 2rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 111%;
+                }
+
+                p{
+                    color: #FFF;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    line-height: normal;
+                }
+            }
+
+            &>:not(:first-child){
+                border-left: .1rem solid #FFFFFF24;
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .functionality{
+        .container{
+            .cards{
+                flex-direction: column;
+
+                .card{
+                    border: none;
+                }
+
+           
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .functionality{
+        .container{
+            .cards{
+                flex-direction: column;
+                gap: 4rem;
+
+                .card{
+                    border: none;
+                    padding: 0;
+                    align-items: center;
+
+                    h3{
+                        text-align: center;
+                    }
+
+                    p{
+                        text-align: center;
+                    }
+                }
+
+           
+            }
+        }
+    }
+}

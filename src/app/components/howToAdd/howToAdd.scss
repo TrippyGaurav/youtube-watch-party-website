@@ -1,0 +1,262 @@
+.how-to-add{
+    position: relative;
+    overflow: hidden;
+
+    .bg{
+        position: absolute;
+        top: -10%;
+    }
+    .top-container{
+        padding: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10rem;
+
+        .top{
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(9.5rem);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 4rem;
+            width: 100%;
+
+            .card{
+                z-index: 99;
+                flex: 1;
+                padding: 2rem;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 2rem;
+
+                h3{
+                    color: #FFF;
+                    font-size: 2rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 111%;
+                }
+
+                p{
+                    color: #FFF;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    line-height: normal;
+                }
+            }
+
+            &>:nth-child(2){
+                border-left: .1rem solid #FFFFFF24;
+                border-right:  .1rem solid #FFFFFF24;;
+            }
+            
+        }
+
+        .middle{
+            z-index: 99;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+
+            h2{
+
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+
+                color: #FFF;
+                font-size: 3.2rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 111%;
+
+                span{
+                    color: #EE4545;
+                }
+            }
+            
+            p{
+                width: 50%;
+                color: #FFF;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                  span{
+                    color: #EE4545;
+                }
+            }
+        }
+    }
+
+    .bottom-container{
+        width: 100%;
+        z-index: 99;
+
+        .bottom-container-top{
+            padding: 4rem;
+            .top{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+    
+                .left{
+                    flex: 1;
+                    h3{
+                        color: #FFF;
+                        font-size: 3.2rem;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 111%;
+                    }
+
+                    p{
+                        padding-top: 1rem;
+                        color: #FFF;
+                        font-size: 1.5rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+
+                        span{
+                            color: #EE4545;
+                        }
+                    }
+                }
+                .right{
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                   
+                }
+            }
+        }
+
+        .bottom-container-bottom{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 99;
+            align-items: flex-start;
+            height: 100%;
+
+            
+            &>*{
+                position: relative;
+                border-top: .1rem solid #FFFFFF24;
+                padding: 4rem;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+                height: 100%;
+
+
+                .img {
+                    object-fit: contain;
+                    width: 5rem !important;
+                    position: relative !important;
+                    height: unset !important;
+                  }
+                  
+                h2{
+                    color: #FFF;
+                    font-size: 2.9rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 111%;
+
+                    span{
+                        color: #EE4545;
+                    }
+                }
+        
+                p{
+                    color: #FFF;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+        
+                    span{
+                        color: #EE4545;
+                    }
+                }
+            
+           }
+    
+           &>:first-child{
+            border-right: .1rem solid #FFFFFF24;;
+           }
+        }
+    
+    }
+}
+
+
+@media screen and (max-width: 798px) {
+    .how-to-add{
+        .top-container{
+
+           .middle{
+
+            h2{
+                width: 100%;
+            }
+
+            p{
+                width: 100%;
+            }
+           }
+        }
+
+        .bottom-container{
+            .bottom-container-top{
+                .top{
+                    gap: 4rem;
+                    .right{
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .how-to-add{
+        .top-container{
+           .top{
+            flex-direction: column;
+            gap: 4rem;
+
+            .card{
+                border: none;
+                padding: 0;
+                align-items: center;
+
+                h3{
+                    text-align: center;
+                }
+
+                p{
+                    text-align: center;
+                }
+            }
+           }
+        }
+    }
+}

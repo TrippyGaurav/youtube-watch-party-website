@@ -1,0 +1,84 @@
+.aboutYoutubeAdBlocker{
+    position: relative;
+    overflow: hidden;
+
+    .bg{
+        position: absolute;
+        top: -10%;
+    }
+    .container{
+        padding: 10rem 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+
+        .content{
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
+            flex-wrap: wrap;
+
+            .left{
+                z-index: 99;
+
+                flex: 2;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+
+                h2{
+                    color: #FFF;
+                    font-size: 4.4rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 111%;
+                }
+
+                p{
+                    color: #FFF;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    span{
+                        color: #EE4545;
+                    }
+                }
+
+            }
+            .right{
+                z-index: 99;
+
+                flex: 1;
+                
+                .image {
+                    object-fit: contain;
+                    width: 100% !important;
+                    position: relative !important;
+                    height: unset !important;
+                  }
+            }
+        }
+
+        button{
+            z-index: 99;
+            width: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .aboutYoutubeAdBlocker{
+        .container{
+           .content{
+            flex-direction: column;
+           }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.install{
+    position: relative;
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10rem 4rem;
+        flex-wrap: wrap;
+
+
+        .left{
+            flex: 1;
+            // border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .right{
+            flex: 2;
+            padding: 2rem;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4rem;
+
+            h2{
+                color: #FFF;
+                font-size: 4.4rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 111%;
+
+                span{
+                    color: #EE4545;
+                }
+            }
+
+            p{
+                color: #FFF;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                span{
+                    color: #EE4545;
+                }
+            }
+
+            ul{
+                margin-left: 2rem;
+                li{
+                    list-style: disc;
+                    color: #FFF;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            button{
+                cursor: pointer;
+                position: relative;
+                display: flex;
+                width: 25.2rem;
+                height: 5.2rem;
+                padding: 1.3rem 2.0rem;
+                justify-content: center;
+                align-items: center;
+                gap: .4rem;
+                flex-shrink: 0;
+                color: #FFFFFF;
+                border: none;
+
+                color: #FFF;
+                font-size: 1.8rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                
+
+                border-radius: 4.5rem;
+                background: #EE4545;
+
+             
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .install{
+        .container{
+            .cards{
+                flex-direction: column;
+
+                .card{
+                    border: none;
+                }
+
+           
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .install{
+        .container{
+          flex-direction: column;
+        }
+    }
+}
